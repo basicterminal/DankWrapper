@@ -17,5 +17,5 @@ def on_message(resp):
           else:
              pass
             
-DankWrapper.Client.gateway.run()
+dankwrapper.run_discum_client()
         
