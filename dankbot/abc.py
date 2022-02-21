@@ -22,7 +22,6 @@ class DankWrapper:
              DankWrapper.Session["Token"]  = Token
              DankWrapper.Session["Author"] = "Error"
              
-             DankWrapper.Client.gateway.run()
           else:
              exit(print(
                   "[!] %sImproper Token Passed%s" % (colorama.Fore.RED, colorama.Fore.RESET)
@@ -56,6 +55,8 @@ class DankWrapper:
                                      exit(print(
                                           "[!] %sPlease Log-In%s" % (colorama.Fore.RED, colorama.Fore.RESET)
                                           ))
+      def start_discum_client():
+          DankWrapper.Client.gateway.run()
                                      
                   
           
